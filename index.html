@@ -53,17 +53,17 @@
 			          </li>	
 			          <li class="menu-has-children"><a href="">Fotos</a>
 			            <ul>
-		            	  <li><a href="elements.html">Prévia</a></li>
+		            	  <li><a href="elements.html">Ensaio Romântico</a></li>
 				          <li class="menu-has-children"><a href="">Cerimônia</a>
 				            <ul>
 				              <li><a href="#">Cartório</a></li>
-				              <li><a href="#">Igreja/cartório</a></li>
+				              <li><a href="#">(Igreja ?)</a></li>
 				            </ul>
 									</li>	
 									<li><a href="elements.html">Lua de mel</a></li>			                		
 			            </ul>
 			          </li>					          					          		          
-			          <li><a href="contact.html">Contact</a></li>
+			          <li><a href="contact.html">Contato</a></li>
 			        </ul>
 			      </nav><!-- #nav-menu-container -->		    		
 		    	</div>
@@ -80,7 +80,37 @@
 							<p>
 								Você vai descobrir o que iremos fazer e como pode fazer parte dessa história também :)
 							</p>
-							<a href="#" class="primary-btn text-uppercase">descubra agora</a>
+							<h2 id="demo"></h2>
+							<script>
+								// Set the date we're counting down to
+								var countDownDate = new Date("Sep 19, 2020 18:00:00").getTime();
+								
+								// Update the count down every 1 second
+								var x = setInterval(function() {
+								
+									// Get today's date and time
+									var now = new Date().getTime();
+								
+									// Find the distance between now and the count down date
+									var distance = countDownDate - now;
+								
+									// Time calculations for days, hours, minutes and seconds
+									var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+									var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+									var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+									var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+								
+									// Display the result in the element with id="demo"
+									document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+									+ minutes + "m " + seconds + "s ";
+								
+									// If the count down is finished, write some text
+									if (distance < 0) {
+										clearInterval(x);
+										document.getElementById("demo").innerHTML = "EXPIRED";
+									}
+								}, 1000);
+								</script>
 						</div>
 						<div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
 							<img class="img-fluid" src="img/hero-img.png" alt="">
@@ -111,7 +141,7 @@
 			<!-- End home-about Area -->
 
 			<!-- Start services Area -->
-			<section class="services-area section-gap">
+			<!-- <section class="services-area section-gap">
 				<div class="container">
 		            <div class="row d-flex justify-content-center">
 		                <div class="menu-content  col-lg-7">
@@ -178,7 +208,7 @@
 						</div>														
 					</div>
 				</div>	
-			</section>
+			</section> -->
 			<!-- End services Area -->	
 
 			<!-- Start fact Area -->
@@ -187,19 +217,19 @@
 					<div class="row">
 						<div class="col-lg-3 col-md-6 single-fact">
 							<h1 class="counter">2536</h1>
-							<p>Projects Completed</p>
+							<p>Cabelos brancos</p>
 						</div>
 						<div class="col-lg-3 col-md-6 single-fact">
 							<h1 class="counter">6784</h1>
-							<p>Happy Clients</p>
+							<p>Brigas durante o planejamento</p>
 						</div>
 						<div class="col-lg-3 col-md-6 single-fact">
 							<h1 class="counter">2239</h1>
-							<p>Cups of Coffee</p>
+							<p>Dívida em milhões</p>
 						</div>	
 						<div class="col-lg-3 col-md-6 single-fact">
 							<h1 class="counter">435</h1>
-							<p>Real Professionals</p>
+							<p>Anos para se recuperar</p>
 						</div>												
 					</div>
 				</div>	
@@ -207,7 +237,7 @@
 			<!-- end fact Area -->	
 
 			<!-- Start portfolio-area Area -->
-            <section class="portfolio-area section-gap" id="portfolio">
+            <!-- <section class="portfolio-area section-gap" id="portfolio">
                 <div class="container">
 		            <div class="row d-flex justify-content-center">
 		                <div class="menu-content pb-70 col-lg-8">
@@ -337,7 +367,7 @@
                     </div>
                     
                 </div>
-            </section>
+            </section> -->
             <!-- End portfolio-area Area -->	
 
 			<!-- Start testimonial Area -->
@@ -346,8 +376,8 @@
 		            <div class="row d-flex justify-content-center">
 		                <div class="menu-content pb-70 col-lg-8">
 		                    <div class="title text-center">
-		                        <h1 class="mb-10">Client’s Feedback About Me</h1>
-		                        <p>It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
+		                        <h1 class="mb-10">Depoimentos Sobre Nós</h1>
+		                        <p>Lucas: pessoa incrível, um cara fantástico. E gabriela</p>
 		                    </div>
 		                </div>
 		            </div>
@@ -359,10 +389,10 @@
 		                        </div>
 		                        <div class="desc">
 		                            <p>
-		                                Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.		     
+		                                Gabriela, por que você não se arruma toda chique pro Lucas igual no trabalho? Pense nisso...		     
 		                            </p>
-		                            <h4>Harriet Maxwell</h4>
-		                            <p>CEO at Google</p>
+		                            <h4>Luiz</h4>
+		                            <p>Amigo de infância</p>
 		                        </div>
 		                    </div>
 		                    <div class="single-testimonial item d-flex flex-row">
@@ -371,10 +401,10 @@
 		                        </div>
 		                        <div class="desc">
 		                            <p>
-		                                A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
+		                                Vou dar um carro pra vocês, merecem. Principalmente o Lucas.
 		                            </p>
-		                            <h4>Carolyn Craig</h4>
-		                            <p>CEO at Facebook</p>
+		                            <h4>Jair</h4>
+		                            <p>Tio</p>
 		                        </div>
 		                    </div>
 		                </div>
@@ -389,8 +419,8 @@
 					<div class="row d-flex justify-content-center">
 						<div class="menu-content pb-70 col-lg-8">
 							<div class="title text-center">
-								<h1 class="mb-10">Choose Your Plan</h1>
-								<p>When someone does something that they know that they shouldn’t do, did they.</p>
+								<h1 class="mb-10">Escolha seu Nível de Consideração</h1>
+								<p>Escolha abaixo uma opção que seu bolso também demonstre amor</p>
 							</div>
 						</div>
 					</div>					
@@ -398,73 +428,71 @@
 						<div class="col-lg-3 col-md-6 single-price">
 							<div class="top-part">
 								<h1 class="package-no">01</h1>
-								<h4>Economy</h4>
-								<p class="mt-10">For the individuals</p>
+								<h4>Lembrancinha</h4>
+								<p class="mt-10">Para ficar de lembrança</p>
 							</div>
 							<div class="package-list">
 								<ul>
-									<li>Secure Online Transfer</li>
-									<li>Unlimited Styles for interface</li>
-									<li>Reliable Customer Service</li>
+									<li>Receberá uma ligação</li>									
 								</ul>
 							</div>
 							<div class="bottom-part">
-								<h1>£199.00</h1>
-								<a class="price-btn text-uppercase" href="#">Buy Now</a>
+								<h1>R$50,00</h1>
+								<a class="price-btn text-uppercase" href="#">Transfira Agora</a>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 single-price">
 							<div class="top-part">
 								<h1 class="package-no">02</h1>
-								<h4>Business</h4>
-								<p class="mt-10">For the individuals</p>
+								<h4>Brother</h4>
+								<p class="mt-10">Para os chegados</p>
 							</div>
 							<div class="package-list">
 								<ul>
-									<li>Secure Online Transfer</li>
-									<li>Unlimited Styles for interface</li>
-									<li>Reliable Customer Service</li>
+									<li>Receberá uma ligação</li>
+									<li>Receberá um lanche especial na primeira visita ao nosso lar</li>
 								</ul>
 							</div>
 							<div class="bottom-part">
-								<h1>£299.00</h1>
-								<a class="price-btn text-uppercase" href="#">Buy Now</a>
+								<h1>R$100,00</h1>
+								<a class="price-btn text-uppercase" href="#">Transfira Agora</a>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 single-price">
 							<div class="top-part">
 								<h1 class="package-no">03</h1>
-								<h4>Premium</h4>
-								<p class="mt-10">For the individuals</p>
+								<h4>Conselheiro mor</h4>
+								<p class="mt-10">Para os mestres</p>
 							</div>
 							<div class="package-list">
 								<ul>
-									<li>Secure Online Transfer</li>
-									<li>Unlimited Styles for interface</li>
-									<li>Reliable Customer Service</li>
+									<li>Receberá uma ligação</li>
+									<li>Receberá um lanche especial na primeira visita ao nosso lar</li>
+									<li>Ganhará um presente especial da viagem de lua de mel</li>
 								</ul>
 							</div>
 							<div class="bottom-part">
-								<h1>£399.00</h1>
-								<a class="price-btn text-uppercase" href="#">Buy Now</a>
+								<h1>R$400</h1>
+								<a class="price-btn text-uppercase" href="#">Transfira Agora</a>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 single-price">
 							<div class="top-part">
 								<h1 class="package-no">04</h1>
-								<h4>Exclusive</h4>
-								<p class="mt-10">For the individuals</p>
+								<h4>Anjo</h4>
+								<p class="mt-10">Para nossos anjos da guarda</p>
 							</div>
 							<div class="package-list">
 								<ul>
-									<li>Secure Online Transfer</li>
-									<li>Unlimited Styles for interface</li>
-									<li>Reliable Customer Service</li>
+									<li>Receberá uma ligação</li>
+									<li>Receberá um lanche especial na primeira visita ao nosso lar</li>
+									<li>Ganhará um presente especial da viagem de lua de mel</li>
+									<li>Bônus surpresa</li>
 								</ul>
 							</div>
 							<div class="bottom-part">
-								<h1>£499.00</h1>
-								<a class="price-btn text-uppercase" href="#">Buy Now</a>
+								<h1>R$800,00</h1>
+								<a class="price-btn text-uppercase" href="#">Transfira Agora</a>
 							</div>
 						</div>																		
 					</div>
@@ -473,7 +501,7 @@
 			<!-- End price Area -->			
 	
 			<!-- Start recent-blog Area -->
-			<section class="recent-blog-area section-gap">
+			<!-- <section class="recent-blog-area section-gap">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-md-8 pb-30 header-text">
@@ -557,11 +585,11 @@
 												
 					</div>
 				</div>	
-			</section>
+			</section> -->
 			<!-- end recent-blog Area -->		
 
 		    <!-- Start brands Area -->
-		    <section class="brands-area">
+		    <!-- <section class="brands-area">
 		        <div class="container">
 		            <div class="brand-wrap">
 		                <div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
@@ -583,7 +611,7 @@
 		                </div>
 		            </div>
 		        </div>
-		    </section>
+		    </section> -->
 		    <!-- End brands Area -->			
 
             <!-- start footer Area -->
@@ -592,9 +620,9 @@
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-6">
                             <div class="single-footer-widget">
-                                <h4>About Me</h4>
+                                <h4>Sobre o Desenvolvedor do Site</h4>
                                 <p>
-                                    We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.
+                                    Lucas é um cara fantástico, sem ele nada disso aqui teria acontecido.
                                 </p>
                                 <p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
@@ -603,8 +631,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         </div>
                         <div class="col-lg-5 col-md-6 col-sm-6">
                             <div class="single-footer-widget">
-                                <h4>Newsletter</h4>
-                                <p>Stay updated with our latest trends</p>
+                                <h4>Boletim informativo</h4>
+                                <p>Fique atualizado com as nossas últimas novidades</p>
 								<div class="" id="mc_embed_signup">
 									 <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
 									  <div class="input-group">
@@ -622,8 +650,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         </div>
                         <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
                             <div class="single-footer-widget">
-                                <h4>Follow Me</h4>
-                                <p>Let us be social</p>
+                                <h4>Siga-nos</h4>
+                                <p>Vamos ser sociáveis :)</p>
                                 <div class="footer-social d-flex align-items-center">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
